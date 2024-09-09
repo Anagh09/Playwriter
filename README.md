@@ -1,4 +1,4 @@
-Prrogramming a a well-known ordinary differential
+Prrogramming a well-known ordinary differential
 equation (ODE) known as Romeo and Juliet over a TCP/IP client-server
 architecture.
 The figurative scenario is a variant of the famous Romeo and Juliet play
