@@ -2,8 +2,7 @@ Prrogramming a well-known ordinary differential
 equation (ODE) known as Romeo and Juliet over a TCP/IP client-server
 architecture.
 The figurative scenario is a variant of the famous Romeo and Juliet play
-by William Shakespeare. Again, you do not have to have read the play
-in order to understand or solve the assignment. In the original tragedy,
+by William Shakespeare. In the original tragedy,
 the two lovers face an impossible relation because of the ongoing rivalry
 between their families. Here, our scenario is just slightly different; whereby
 the playwriter, William Shakespeare, gets acquaintance with the two lovers
@@ -17,9 +16,7 @@ single-threaded. The client, i.e. the Playwriter, will be responsible to com-
 municate with the servers to get the ODE values over time (i.e. iterations).
 For each verse of the play (i.e. iteration of the ODE), the Playwriter will
 request the service from both servers and annotate their answers in the novel.
-At the end of the iterations, the novel will be dumped into a .csv file. The
-method to do so is also provided to you, so you do not have to worry about
-it. 
+At the end of the iterations, the novel will be dumped into a .csv file.
 
 **Methods description**
 
@@ -30,7 +27,7 @@ The service is calculating the next value of the ODE sinusoidal part.
 
 • public Juliet(double initialLove): Class constructor. Create the
 server socket. The IP address corresponds to the localhost (i.e. 127.0.0.1).
-The port can be any number, but you are suggested to use 7779 for Juliet.
+The port can be any number, suggested to use 7779 for Juliet.
 The initialLove value helps to intialize the attribute currentLove.
 
 • public Pair¡InetAddress,Integer¿ getAcquaintance(): Receives lover’s
@@ -47,8 +44,7 @@ the client (the playwriter). Note that the message will arrive in the form
 of a string so a casting to a double will be required before processing the
 request.
 
-• public double renovateLove(double partnerLove): Provided. No
-need to do anything. The ODE system. Given the lover’s love at time
+• public double renovateLove(double partnerLove): The ODE system. Given the lover’s love at time
 t, estimate the next love value for Romeo at time t + 1. This method
 provides the actual service. Note how the value of the ODE is stored in
 attribute currentLove.
@@ -86,8 +82,7 @@ the client (the playwriter). Note that the message will arrive in the form
 of a string so a casting to a double will be required before processing the
 request.
 
-• public double renovateLove(double partnerLove): Provided. No
-need to do anything. The ODE system. Given the lover’s love at time
+• public double renovateLove(double partnerLove): The ODE system. Given the lover’s love at time
 t, estimate the next love value for Romeo at time t + 1. This method
 provides the actual service. Note how the value of the ODE is stored in
 attribute currentLove.
